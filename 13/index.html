@@ -1,0 +1,24 @@
+Nim : 1922500086<br>
+nama : claudio khelvin<br>
+kelompok : Si5B<br>
+pada pertemuan ke 4 tangal 6Januari 2022,kesimpulan materi ini:
+<ol>
+<li> pertama buka login websitenya lalu masuk</li>
+<li> buka plugin boostrap </li>
+<li> lalu buka file sembago yang sudah dibagi lalu tambah koding sqli select data dri mysqli</li>
+<li> lalu buka php myadmin dala bua tabel baru dg nama lb_sembako dengam 6 tabel</li>
+<li> lalu tama kode ($sql = insert into) untuk menyimpan</li>
+<li> ada juga menyimpan dengan cara berpisa dengan membuat file koneksi.php dengan koding ($servername = "localhost"; username = "root";password ="";	$dbname = "db_1922500086"; 	//create connection//$conn = new mysqli($servername, $username,$password, $dbname);	//chek connection if ($conn->connect_error) {die("connection failed: " . $conn->connect_error); })</li>
+<li> ada juga cara menambah kode tetakhir</li>
+<li>($terakhir = $conn->query("SELECT * FROM tbl_sembako");</li>
+<li> if ($terakhir->nun_row > 0):</li>
+<li> $terakhir = $conn->query("SELECT max(substr max(sunstr(kdbrg,-2))+1 FROM tbl_sembako");</li>
+<li> $kdterakhir = $terakhir->fetch_object()</li>
+<li> if ($kdterakhir->KODE <10):</li>
+<li> $kdbrg = "BRG-0" . $kdterakhir->KODE;</li>
+<li> elseif ($kdterakhir->KODE < 100):</li>
+<li> $kdbrg = "BRG-" . $kdterakhir->KODE;</li>
+<li> else:</li>
+<li> $kdbrg = "BRG-01";</li>
+<li> endif;)</li>
+</ol>
