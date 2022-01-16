@@ -12,16 +12,4 @@ pada pertemuan ke 14 tangal 10 Januari 2022,kesimpulan materi ini:
 if ($qbrg->num_rows > 0):$i = 1;while($dtbrg = $qbrg->fetch_object()):) gunakan coding tersebut untuk menunjukan hasilnya</li>
 <li> ($i = 1;) berfu untuk membuat perualangan</li>
 <li>(Rp.<?= number_format($dtbrg->harsat, 0, ",", "." ) ?>,- /<?= $dtbrg->satuan ?) digunakan untuk menampikan rupiah</li>
-<li> jika ingin menghitung jumlah asset gunakan coding berikut (<?php $jumlah = $dtbrgp->harsat * $dtbrgp->stok;$total += $jumlah?>Rp.<?= number_format($jumlah, 0, ",", ".") ?>,-)</li>
-<li> (<td><a class="btn btn-warning" href="?page=linkutama&hal=sembako&aksi-ubah&kode=<?= $dtbrg->kdbrg ?>">ubah <i class= "fa fa-pencil"></i></a> Hapus</td>) digunakan untuk menambah tombol ubah</li>
-<li> (<a onclick="return confirm('benar dak dihapus'); " class ="btn btn-danger" href="?page=linkutama&hal=sembako$aksi=hapus&kode=<?= $dtbrg->kdbrg ?>">Hapus <i class="fa fa-trash"></i>)untuk menambah tombol hapus</li>
-<li> if (isset($_Get["aksi"]) && isset($_Get["kode"])):</li>
-<li> $kode = $_Get["kode"];</li>
-<li> if ($_Get["aksi"]=="ubah"):</li>
-<li> elseif ($_Get["aksi"]=="hapus"):</li>
-<li> $conn->query("DELETE FROM tbl_sembako WHERE kdbrg='$kode' ");</li>
-<li> ?></li>
-<li> meta http-equiv="refresh" content="0; url=?page=linkutama&hal=sembako"></li>
-<li> <?php endif;  endif;</li>
-<li> digunakan untuk menguba isi dan menghapus</li>
 </ol>
